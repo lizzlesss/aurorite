@@ -6,13 +6,6 @@ set -ouex pipefail
 cp -avf "/ctx/system_files"/. /
 
 dnf install -y \
-    --nogpgcheck \
-    --repofrompath \
-    'terra,https://repos.fyralabs.com/terra$releasever' \
-    terra-release \
-    terra-gpg-keys
-
-dnf install -y \
     dmemcg-booster \
     kcgroups-dmemcg \
     mangohud \
