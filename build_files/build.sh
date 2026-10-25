@@ -10,8 +10,7 @@ dnf install -y \
     https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
 dnf config-manager enable \
-    terra \
-    terra-extras
+    terra
 
 dnf install -y \
     dmemcg-booster \
@@ -20,6 +19,9 @@ dnf install -y \
     scx-scheds \
     scx-tools \
     steam \
+    terra-release-extras
+
+dnf install -y \
     terra-gamescope
 
 systemctl enable podman.socket
