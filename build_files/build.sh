@@ -14,7 +14,8 @@ dnf install -y \
     mangohud \
     scx-scheds \
     scx-tools \
-    terra-release-extras
+    terra-release-extras \
+    waydroid-nvidia
 
 dnf config-manager enable \
     terra-extras
