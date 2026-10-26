@@ -14,13 +14,13 @@ dnf install -y \
     mangohud \
     scx-scheds \
     scx-tools \
-    terra-release-extras \
-    waydroid-nvidia
+    terra-release-extras
 
 dnf config-manager enable \
     terra-extras
 
 dnf install -y \
-    terra-gamescope
+    terra-gamescope \
+    waydroid-nvidia
 
 systemctl enable podman.socket
