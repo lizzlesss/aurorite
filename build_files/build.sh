@@ -16,6 +16,7 @@ dnf install -y \
     dmemcg-booster \
     kcgroups-dmemcg \
     mangohud \
+    steam \
     terra-release-extras
 
 dnf config-manager enable \
