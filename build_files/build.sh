@@ -16,8 +16,6 @@ dnf install -y \
     dmemcg-booster \
     kcgroups-dmemcg \
     mangohud \
-    scx-scheds \
-    scx-tools \
     terra-release-extras
 
 dnf config-manager enable \
@@ -26,5 +24,12 @@ dnf config-manager enable \
 dnf install -y \
     terra-gamescope \
     waydroid-nvidia
+
+dnf copr enable -y sirlucjan/scx-scheds-cargo
+
+dnf install -y \
+    scx-scheds-git
+
+dnf copr disable -y sirlucjan/scx-scheds-cargo
 
 systemctl enable podman.socket
