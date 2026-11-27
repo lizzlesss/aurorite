@@ -10,6 +10,7 @@ dnf remove -y \
     zsh
 
 dnf config-manager enable \
+    fedora-multimedia \
     terra
 
 dnf install -y \
