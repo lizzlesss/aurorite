@@ -15,6 +15,7 @@ dnf config-manager enable \
 
 dnf install -y \
     dmemcg-booster \
+    gamescope \
     kcgroups-dmemcg \
     mangohud \
     steam \
@@ -24,7 +25,6 @@ dnf config-manager enable \
     terra-extras
 
 dnf install -y \
-    terra-gamescope \
     waydroid-nvidia
 
 dnf copr enable -y sirlucjan/scx-scheds-cargo
